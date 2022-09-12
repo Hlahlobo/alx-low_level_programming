@@ -8,7 +8,6 @@
  */
 int main(void)
 {
-	char c;
 	char cn;
 
 	for (cn = '0'; cn <= 9; cn++)
