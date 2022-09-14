@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check the code
+ * print_alphabet - function to print abc...z
  *
  * Return: Always 0.
  */
