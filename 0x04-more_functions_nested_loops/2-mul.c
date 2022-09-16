@@ -7,7 +7,7 @@
  * Return: returns result
  */
 
-int mult (int a, int b)
+int mult(int a, int b)
 {
 	return (a * b);
 }
