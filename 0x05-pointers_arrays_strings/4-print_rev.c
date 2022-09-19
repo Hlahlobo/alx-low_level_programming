@@ -12,7 +12,8 @@
 {
 	int len = strlen(s);
 
+
 	while (len--)
 		putchar(*(s + len));
-	puchar(10);
+	putchar(10);
 }
