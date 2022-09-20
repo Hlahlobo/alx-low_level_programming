@@ -7,7 +7,7 @@
  * Return: nothing
  */
 
-void print_array(int *a, int n)
+void puts_half(char *str)
 {
 	int l;
 
@@ -23,6 +23,6 @@ void print_array(int *a, int n)
 			for (n = ((l - 1) / 2) + 1; str[n] != '\0'; n++)
 				_putchar(str[n]);
 		}
-		_putchar('\nn');
+		_putchar('\n');
 	}
 }
