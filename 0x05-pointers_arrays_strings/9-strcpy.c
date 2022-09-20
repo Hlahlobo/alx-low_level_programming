@@ -3,7 +3,7 @@
 /**
  * _strcpy -  function that copies the string pointed to by src
  *@dest: destination
- *@src: source
+ *@scr: source
  *Return: dest
  */
 
