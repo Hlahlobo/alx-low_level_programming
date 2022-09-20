@@ -4,18 +4,18 @@
 /**
  *_puts - prints a string
  *@str: string parameter
+ *@i: integer parameter
  *Return: Nothing
  */
 
 void puts2(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (*(str + 1) != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (i % 2 == 0)
-			putchar(*(str + i));
-		i++;
+			_putchar(str[i]);
 	}
-	putchar(10);
+	_putchar('\n');
 }
