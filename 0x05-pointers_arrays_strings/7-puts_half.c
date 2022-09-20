@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_array -  a function that prints n elements
- * @str: string 
+ * puts_half -  a function that prints n elements
+ * @str: string
  * @l: parameter
  * @n: anathor parameter
  * Return: nothing
@@ -12,7 +12,7 @@ void puts_half(char *str)
 	int l, n;
 
 	for (l = 0; str[1] != '\0'; l++)
-	{
+	
 		if (l % 2 == 0)
 		{
 			for (n = 1 / 2; str[n] != '\0'; n++)
@@ -24,5 +24,5 @@ void puts_half(char *str)
 				_putchar(str[n]);
 		}
 		_putchar('\n');
-	}
+	
 }
