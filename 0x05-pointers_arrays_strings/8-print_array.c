@@ -4,7 +4,7 @@
 /**
  *print_array - a function that prints n elements of an array of integers
  *@a: argument 1
- *@i: parameter
+ *
  *@n: number of elements
  *Return: nothing
  */
