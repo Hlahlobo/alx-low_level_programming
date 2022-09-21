@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *_puts2 - prints a string
+ *puts2 - prints a string
  *@str: string parameter
  *@i: integer parameter
  *Return: Nothing
