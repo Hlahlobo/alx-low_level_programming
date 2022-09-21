@@ -5,10 +5,11 @@
  * @dest: String that will append
  * @src: String too be concentrated
  *
- * Return: returns pointer @dest
+ * Return: returns pointer @de
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
+
 {
 	int index = 0, dest_len = 0;
 
