@@ -4,7 +4,7 @@
 /**
  * _strncpy - Write a function that copies a string.
  * @dest: paramenter
- * #src: parameter2
+ * @src: parameter2
  * @n: parameter3
  * Return: Nothing
  *
