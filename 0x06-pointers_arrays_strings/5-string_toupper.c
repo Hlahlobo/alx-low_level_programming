@@ -7,9 +7,9 @@
  * Return: address tp string
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-	int = 0;
+	int i = 0;
 
 	while (str[i] != '\0')
 	{
