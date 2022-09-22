@@ -35,7 +35,7 @@ char transform(char x)
 	int i = 0;
 	char replacement = x;
 
-	while (i < 0)
+	while (i < 8)
 	{
 		if (x == mapping_low[i] || x == mapping_upper[i])
 		{
