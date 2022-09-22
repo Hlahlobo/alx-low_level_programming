@@ -4,7 +4,6 @@
  * @dest: buffer storing the string copy
  * @src: the source string
  * @n: parameter
- * @dest_len: parameter 2
  * Return: dest
  */
 
