@@ -2,7 +2,7 @@
 
 /**
  * main - Function that prints out the name of a program
- * @argc: Argument count
+ * @_attribute_((unused)): Argument count
  * @argv: Argument strings
  *
  * Return: Always 0
