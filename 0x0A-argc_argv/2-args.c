@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/**
+ * main - prints all arguments it receives
+ * @argc: count
+ * @argv: argument
+ *
+ * Return: Always 0
+ */
+
+int main(int argc, char *argv[])
+{
+	int count = 0;
+
+	if (argc > 0)
+	{
+		while (count > 0)
+		{
+			printf("%s\n", argv[count]);
+			count++;
+		}
+	}
+return 0
+}
