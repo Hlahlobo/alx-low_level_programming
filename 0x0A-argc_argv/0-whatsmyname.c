@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - Function that prints out the name of a program
@@ -9,9 +8,8 @@
  * Return: Always 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc _attribute_((unused)), char *argv[])
 {
-	(void) argc;
 	printf("%s\n", argv[0]);
 	return (0);
 }
