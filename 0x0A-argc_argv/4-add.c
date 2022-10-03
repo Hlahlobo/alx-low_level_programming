@@ -34,9 +34,9 @@ return (1);
  *
  * @argc: Argument count
  * @argv: Argument vector
- * @check_num: check number
+ * 
  *
- * Return: Nothing
+ * Return: Always 0 (success)
  */
 
 int main(int argc, char *argv[])
