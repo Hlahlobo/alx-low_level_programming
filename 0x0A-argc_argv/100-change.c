@@ -28,4 +28,18 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
+
+	while (coins[position] != '\0')
+	{
+		if (total >= coins[postion])
+		{
+			aux = (total / coins[postion]);
+			change += aux;
+			total -= coins[position] * aux;
+		}
+		position ++;
+
+	}
+	printf("%d\n", change);
+	return (0);
 }
