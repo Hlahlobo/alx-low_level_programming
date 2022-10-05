@@ -4,7 +4,7 @@
  * free_grid - Function for free grid
  *@height: parametwr
  *
- *
+ *@grid: grid
  *
  *
  *
