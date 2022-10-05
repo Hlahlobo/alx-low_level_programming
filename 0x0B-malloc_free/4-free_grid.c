@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * alloc_grid - Afunction that allocates space
- *@width: parameter 1
- *@height: parameter 2
+ * free_grid - Function for free grid
+ *@height: parametwr
+ *
+ *
+ *
  *
  *
  *
