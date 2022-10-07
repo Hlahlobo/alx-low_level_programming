@@ -5,9 +5,8 @@
 
 /**
  * array_range - function to check range
- * @min - minimum value
+ * @min: minimum value
  * @max: maximum value
- * 
  *
  *
  * Return: range pointer
