@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 int _strlen(char *str);
 char *_strcopy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
@@ -52,7 +52,7 @@ char *_strcopy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog *doggo;
+	dog_t *doggo;
 
 	if (age || name || owner == NULL)
 		return (NULL);
@@ -60,7 +60,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (doggo->name == NULL)
 		return (NULL);
 
-	doggo->name = mallog(sizeof(char) * (_strlen(owner) + 1));
+	doggo->name = malloc(sizeof(char) * (_strlen(owner) + 1));
 
 	if (doggo->name == NULL)
 	{
