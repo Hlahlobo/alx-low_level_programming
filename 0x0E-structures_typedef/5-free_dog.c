@@ -4,6 +4,7 @@
 /**
  * free_dog: Free dog
  * @d: The dog to be freed
+ * Description: This is struct for dog
  */
 
 void free_dog(dog_t *d)
