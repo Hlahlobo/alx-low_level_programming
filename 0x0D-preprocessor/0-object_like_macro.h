@@ -3,4 +3,4 @@
 
 #define size 1024
 
-#endif /* OBJECT_LIKE_MICRO_H */
+#endif
