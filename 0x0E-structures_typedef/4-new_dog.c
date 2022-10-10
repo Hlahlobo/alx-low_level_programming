@@ -26,7 +26,7 @@ int _strlen(char *str)
  * _strcopy - Copies a string
  * @dest: buffer
  * @src: source string
- *
+ * Return: dest pointer
  */
 
 char *_strcopy(char *dest, char *src)
@@ -54,19 +54,26 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggo;
 
-	if (age || name || owner == NULL)
+	if (age > 0 || name == NULL || owner == NULL)
 		return (NULL);
 	doggo = malloc(sizeof(dog_t));
-	if (doggo->name == NULL)
+	if (doggo == NULL)
 		return (NULL);
 
-	doggo->name = malloc(sizeof(char) * (_strlen(owner) + 1));
+	doggo->name = malloc(sizeof(char) * (_strlen(name) + 1));
 
 	if (doggo->name == NULL)
 	{
-		free(doggo->name);
 		free(doggo);
 
+		return (NULL);
+	}
+
+	doggo->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if (doggo->owner == NULL)
+	{
+		free(doggo->name);
+		free(doggo);
 		return (NULL);
 	}
 
