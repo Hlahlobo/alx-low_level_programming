@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void _attribute_((constructor)) hare(void);
+void __attribute__((constructor)) hare(void);
 
 /**
  * hare - print a string
@@ -8,6 +8,6 @@ void _attribute_((constructor)) hare(void);
 
 void hare(void)
 {
-	printf("You're beat! and yet, you must allow,"
-			"\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,");
+	printf("\nI bore my house upon my back!\n");
 }
