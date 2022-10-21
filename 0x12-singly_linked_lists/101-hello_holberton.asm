@@ -4,7 +4,7 @@ sectrion .text
 	global main
 
 main:
-	push rgb
+	push rbp
 
 	mov rdi,fmt
 	mov rsi,msg
