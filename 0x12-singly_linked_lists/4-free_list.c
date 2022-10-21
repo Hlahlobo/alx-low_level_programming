@@ -1,5 +1,5 @@
 
-#include "main.h"
+#include "lists.h"
 #include <stdlib.h>
 /**
  * free_list - Funnction to free lists
