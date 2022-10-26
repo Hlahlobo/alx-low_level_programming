@@ -1,6 +1,10 @@
 #include "lists.h"
 
 /**
+ * delete_nodeint_at_index -  deletes the node at index
+ * @head: First note pointer
+ * @index: index
+ * Return: -1 / 1
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -30,4 +34,5 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	copy->next = tmp->next;
 	free(tmp);
 	return (1);
+
 }
