@@ -12,6 +12,7 @@
 int _strlen(char *s)
 {
 	int counter = 0;
+
 	if (!*s)
 		return (0);
 	while (*s)
@@ -46,7 +47,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (new == NULL)
 	{
-		 return (NULL);
+		return (NULL);
 	}
 	for (i = 0; s1[i]; i++)
 	{
