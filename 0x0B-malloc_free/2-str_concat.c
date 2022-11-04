@@ -1,4 +1,26 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * _strlen - counts and returns string length
+ * @s: that's the string
+ *
+ * Return: the length
+ */
+
+int _strlen(char *s)
+{
+	int counter = 0;
+	if (!*s)
+		return (0);
+	while (*s)
+	{
+		counter++;
+		s++;
+	}
+	return (counter);
+}
 
 /**
  * str_concat -  returned pointer should point to a newly allocated space
@@ -10,41 +32,31 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-int i = 0;
-int j = 0;
-int l = 0;
-int k = 0;
-char *s;
+	char *new;
+	unsigned int i;
+	unsigned int j;
+	int total = 0;
 
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
-while (s1[i])
-i++;
-while (s2[j])
-j++;
-l = i + j;
-s = (char *)malloc(l *sizeof(char) + 1);
-if (s == NULL)
-return (NULL);
+	if (!s1)
+		s1 = "";
+	if (!s2)
+		s2 = "";
+	total += _strlen(s1) + _strlen(s2);
+	new = malloc((total * sizeof(char)) + 1);
 
-j = 0;
-
-while (k < l)
-{
-	if (k < i)
+	if (new == NULL)
 	{
-		s[k] = s1[k];
+		 return (NULL);
 	}
-
-	if (k >= j)
+	for (i = 0; s1[i]; i++)
 	{
-		s[k] = s2[j];
-		j++;
+		new[i] = s1[i];
 	}
-	k++;
-}
-s[k] = '\0';
-return (s);
+	for (j = 0; s2[j]; j++, i++)
+	{
+		new[i] = s2[j];
+	}
+	new[i] = '\0';
+	return (new);
+
 }
