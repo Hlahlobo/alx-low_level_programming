@@ -1,2 +1,2 @@
-Read me file for 
+ead me file for 
 0x09-static_libraries
